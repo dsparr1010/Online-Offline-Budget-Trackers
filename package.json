@@ -1,0 +1,32 @@
+{
+  "name": "Online-Offline-Budget-Trackers",
+  "version": "1.0.0",
+  "description": "# Description The user is able to add expenses and deposits to their budget with or without a connection. When entering transactions offline,  the total populates when brought back online.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsparr1010/Online-Offline-Budget-Trackers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsparr1010/Online-Offline-Budget-Trackers/issues"
+  },
+  "homepage": "https://github.com/dsparr1010/Online-Offline-Budget-Trackers#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.10",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
