@@ -22,7 +22,11 @@ mongoose.connect("mongodb://localhost/budget", {
 });
 
 // routes here
+const routes = require('./routes/api-routes');
+app.use(routes);
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
+
+module.exports = app;

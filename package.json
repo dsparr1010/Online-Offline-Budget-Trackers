@@ -4,7 +4,9 @@
   "description": "# Description The user is able to add expenses and deposits to their budget with or without a connection. When entering transactions offline,  the total populates when brought back online.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch",
+    "build": "npm run webpack",
+    "test": "mocha --timeout 120000",
     "start": "node server.js",
     "dev": "lite-server"
   },
@@ -20,13 +22,24 @@
   },
   "homepage": "https://github.com/dsparr1010/Online-Offline-Budget-Trackers#readme",
   "dependencies": {
+    "chai-http": "^4.3.0",
+    "chart.js": "^2.8.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
+    "mockgoose": "^8.0.4",
     "mongoose": "^5.8.10",
     "morgan": "^1.9.1",
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-dynamic-import-webpack": "^1.1.0",
+    "chai": "^4.2.0",
+    "lite-server": "^2.5.4",
+    "mocha": "^7.0.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
   }
 }
